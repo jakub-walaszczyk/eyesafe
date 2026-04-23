@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFFDBF1363CFF720DF9EC96 /* EyeSafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365FFEC1C31609AFDF2DEB3 /* EyeSafeApp.swift */; };
+		DD06923443A4D615678A2BA5 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B415AC8A73CC9FB0FE19C9C /* TimerState.swift */; };
+		DC9F83E9ABDA02DCAD571191 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB445A60A3C09C8F5564F6 /* TimerViewModel.swift */; };
+		72A8055EE2EE8E65FDBA4010 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED7B115851911AC51A2539 /* MenuBarView.swift */; };
+		691FC9DDECEEC1D52DA0A4FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33BAA07AAA882F8655F14A4 /* SettingsView.swift */; };
+		60FDA6795FE11BCD427B65E8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B063E44F1D673CAC0F60B /* NotificationManager.swift */; };
+		D3319C4DD4EA8C56481C18FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691789A294D26B9F8DD8FA2C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3365FFEC1C31609AFDF2DEB3 /* EyeSafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/EyeSafeApp.swift"; sourceTree = "<group>"; };
+		6B415AC8A73CC9FB0FE19C9C /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/Models/TimerState.swift"; sourceTree = "<group>"; };
+		34BB445A60A3C09C8F5564F6 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/ViewModels/TimerViewModel.swift"; sourceTree = "<group>"; };
+		A5ED7B115851911AC51A2539 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/Views/MenuBarView.swift"; sourceTree = "<group>"; };
+		C33BAA07AAA882F8655F14A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/Views/SettingsView.swift"; sourceTree = "<group>"; };
+		DA1B063E44F1D673CAC0F60B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/EyeSafe/Services/NotificationManager.swift"; sourceTree = "<group>"; };
+		691789A294D26B9F8DD8FA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Sources/EyeSafe/Assets.xcassets"; sourceTree = "<group>"; };
+		C27EF613AA18578CBBFCC3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839E6C4A86CE081D139B9BAF /* EyeSafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeSafe.entitlements; sourceTree = "<group>"; };
+		2A7CF5CF82FFC5789DA0A06F /* EyeSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C0C76799B2CFBF5FE90E01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C811EE072C42FE8497FCC03 = {
+			isa = PBXGroup;
+			children = (
+				A4D032059E9693116E8DD6ED /* EyeSafe */,
+				71CF8ED0289D2727EE24D926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D032059E9693116E8DD6ED /* EyeSafe */ = {
+			isa = PBXGroup;
+			children = (
+				3365FFEC1C31609AFDF2DEB3 /* EyeSafeApp.swift */,
+				6B415AC8A73CC9FB0FE19C9C /* TimerState.swift */,
+				34BB445A60A3C09C8F5564F6 /* TimerViewModel.swift */,
+				A5ED7B115851911AC51A2539 /* MenuBarView.swift */,
+				C33BAA07AAA882F8655F14A4 /* SettingsView.swift */,
+				DA1B063E44F1D673CAC0F60B /* NotificationManager.swift */,
+				691789A294D26B9F8DD8FA2C /* Assets.xcassets */,
+				C27EF613AA18578CBBFCC3FD /* Info.plist */,
+				839E6C4A86CE081D139B9BAF /* EyeSafe.entitlements */,
+			);
+			path = EyeSafe;
+			sourceTree = "<group>";
+		};
+		71CF8ED0289D2727EE24D926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A7CF5CF82FFC5789DA0A06F /* EyeSafe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1156BB588976C198050FEF0 /* EyeSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB85F2F5F8034C40A014249 /* Build configuration list for PBXNativeTarget "EyeSafe" */;
+			buildPhases = (
+				24B673740AE893BE2A047C6A /* Sources */,
+				1C0C76799B2CFBF5FE90E01B /* Frameworks */,
+				10761A19C861B0B1D66677C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeSafe;
+			productName = EyeSafe;
+			productReference = 2A7CF5CF82FFC5789DA0A06F /* EyeSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8E15DCC73EA5D9C641CCD3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 7F06E95FA141ACEDE4FA6FBA /* Build configuration list for PBXProject "EyeSafe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C811EE072C42FE8497FCC03;
+			productRefGroup = 71CF8ED0289D2727EE24D926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1156BB588976C198050FEF0 /* EyeSafe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10761A19C861B0B1D66677C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3319C4DD4EA8C56481C18FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24B673740AE893BE2A047C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFFDBF1363CFF720DF9EC96 /* EyeSafeApp.swift in Sources */,
+				DD06923443A4D615678A2BA5 /* TimerState.swift in Sources */,
+				DC9F83E9ABDA02DCAD571191 /* TimerViewModel.swift in Sources */,
+				72A8055EE2EE8E65FDBA4010 /* MenuBarView.swift in Sources */,
+				691FC9DDECEEC1D52DA0A4FC /* SettingsView.swift in Sources */,
+				60FDA6795FE11BCD427B65E8 /* NotificationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		357BD7068D567D06D42C29FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		603E709AC50595807FA30268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9331D54FF2CDCE28F8482072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSafe/EyeSafe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeSafe/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eyesafe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		11B273DE2474AF49A9CCBC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSafe/EyeSafe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeSafe/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eyesafe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F06E95FA141ACEDE4FA6FBA /* Build configuration list for PBXProject "EyeSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				357BD7068D567D06D42C29FF /* Debug */,
+				603E709AC50595807FA30268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB85F2F5F8034C40A014249 /* Build configuration list for PBXNativeTarget "EyeSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9331D54FF2CDCE28F8482072 /* Debug */,
+				11B273DE2474AF49A9CCBC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8E15DCC73EA5D9C641CCD3E /* Project object */;
+}
