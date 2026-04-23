@@ -15,5 +15,8 @@ xcuserdata/
 *.swp
 *~
 
+# data
+tmp/
+
 # Project instructions
 CLAUDE.md
