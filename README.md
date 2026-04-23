@@ -18,15 +18,22 @@ EyeSafe sits quietly in your menu bar, tracks your work time, and notifies you w
 git clone https://github.com/jakub-walaszczyk/eyesafe.git
 cd eyesafe
 
-# Build the app
-xcodebuild -project EyeSafe.xcodeproj -scheme EyeSafe -configuration Release build
-
-# Copy to Applications
-cp -R "$(xcodebuild -project EyeSafe.xcodeproj -scheme EyeSafe -configuration Release -showBuildSettings 2>/dev/null | grep -m1 'BUILT_PRODUCTS_DIR' | awk '{print $3}')/EyeSafe.app" /Applications/
+# Build and install to /Applications
+make install
 
 # Launch it
 open /Applications/EyeSafe.app
 ```
+
+Other Make targets:
+
+| Command | What it does |
+|---------|-------------|
+| `make build` | Build the Release `.app` into `./build/` |
+| `make run` | Build and launch the app |
+| `make clean` | Delete build artifacts |
+| `make install` | Build and copy to `/Applications/` |
+| `make uninstall` | Remove from `/Applications/` |
 
 ### Option 2: Build with Xcode
 
@@ -47,7 +54,10 @@ open /Applications/EyeSafe.app
 ### Uninstalling
 
 1. Quit EyeSafe (click the eye icon > Quit).
-2. Delete `EyeSafe.app` from `/Applications`.
+2. Remove the app:
+   ```bash
+   make uninstall
+   ```
 3. Optionally remove saved settings:
    ```bash
    defaults delete com.eyesafe.app
