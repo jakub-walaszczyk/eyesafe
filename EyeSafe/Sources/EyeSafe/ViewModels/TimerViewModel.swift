@@ -131,7 +131,7 @@ final class TimerViewModel: ObservableObject {
             let next = remaining - 1
             if next <= 0 {
                 state = .breakTime(remaining: breakDuration)
-                NotificationManager.shared.sendBreakNotification(soundEnabled: soundEnabled)
+                NotificationManager.shared.sendBreakNotification(soundEnabled: soundEnabled, breakDuration: breakDuration)
             } else {
                 state = .working(remaining: next)
             }
@@ -194,7 +194,7 @@ final class TimerViewModel: ObservableObject {
             let adjusted = remaining - elapsed
             if adjusted <= 0 {
                 state = .breakTime(remaining: breakDuration)
-                NotificationManager.shared.sendBreakNotification(soundEnabled: soundEnabled)
+                NotificationManager.shared.sendBreakNotification(soundEnabled: soundEnabled, breakDuration: breakDuration)
             } else {
                 state = .working(remaining: adjusted)
             }

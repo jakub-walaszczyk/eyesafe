@@ -26,10 +26,11 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         }
     }
 
-    func sendBreakNotification(soundEnabled: Bool) {
+    func sendBreakNotification(soundEnabled: Bool, breakDuration: TimeInterval) {
         let content = UNMutableNotificationContent()
         content.title = "Time for a break!"
-        content.body = "Look at something 20 feet away for 20 seconds."
+        let seconds = Int(breakDuration)
+        content.body = "Look at something at least 20 feet / 6 meters away for \(seconds) seconds."
         if soundEnabled {
             content.sound = .default
         }
